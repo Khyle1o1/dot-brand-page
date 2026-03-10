@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+/* Halis Grotesque fallback stack — replace with @font-face when font files are available */
 @layer base {
   :root {
+    --font-display: 'Outfit', 'DM Sans', system-ui, sans-serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+
     --background: 37 26% 89%;
     --foreground: 0 0% 7%;
 
@@ -44,9 +48,6 @@
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 10%;
     --sidebar-ring: 218 88% 50%;
-
-    --font-heading: 'DM Serif Display', serif;
-    --font-body: 'DM Sans', sans-serif;
   }
 
   .dark {
@@ -86,10 +87,11 @@
   }
 
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
   }
 
   h1, h2, h3, h4 {
-    font-family: var(--font-heading);
+    font-family: var(--font-display);
   }
 }
