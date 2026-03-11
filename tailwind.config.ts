@@ -51,6 +51,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        section: {
+          hero: "hsl(var(--section-hero))",
+          packages: "hsl(var(--section-packages))",
+          coffee: "hsl(var(--section-coffee))",
+          fridge: "hsl(var(--section-fridge))",
+          footer: "hsl(var(--section-footer))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

@@ -5,8 +5,12 @@ import dotFridge from "@/assets/dot-fridge.png";
 
 const FridgeMenuSection = () => {
   return (
-    <section className="py-28 px-6" id="fridge-menu">
-      <div className="container mx-auto max-w-7xl">
+    <section className="relative py-32 px-6 bg-section-fridge overflow-hidden" id="fridge-menu">
+      {/* Decorative cool shapes */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-primary/[0.03] blur-3xl" />
+      <div className="absolute bottom-0 right-10 w-72 h-72 rounded-full bg-secondary/[0.05] blur-3xl" />
+
+      <div className="container mx-auto max-w-7xl relative z-10">
         <SectionHeader
           title="dot fridge menu"
           badge="package c"
@@ -14,14 +18,14 @@ const FridgeMenuSection = () => {
           id="fridge-menu-header"
         />
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-20">
           {/* Cold Brew */}
           <div>
-            <div className="flex items-center gap-4 mb-8">
+            <div className="flex items-center gap-4 mb-10">
               <h3 className="font-display text-3xl md:text-4xl font-bold text-accent tracking-tight">
                 canned cold brew
               </h3>
-              <div className="flex-1 h-px bg-foreground/8" />
+              <div className="flex-1 h-px bg-foreground/[0.06]" />
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {fridgeMenu.cannedColdBrew.map((item) => (
@@ -32,11 +36,11 @@ const FridgeMenuSection = () => {
 
           {/* Espresso */}
           <div>
-            <div className="flex items-center gap-4 mb-8">
+            <div className="flex items-center gap-4 mb-10">
               <h3 className="font-display text-3xl md:text-4xl font-bold text-accent tracking-tight">
                 canned espresso
               </h3>
-              <div className="flex-1 h-px bg-foreground/8" />
+              <div className="flex-1 h-px bg-foreground/[0.06]" />
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {fridgeMenu.cannedEspresso.map((item, i) => (
@@ -47,15 +51,15 @@ const FridgeMenuSection = () => {
         </div>
 
         {/* Fridge showcase */}
-        <div className="mt-20 flex justify-center">
-          <div className="bg-card rounded-3xl p-8 md:p-12 border border-foreground/5 max-w-sm text-center">
+        <div className="mt-24 flex justify-center">
+          <div className="bg-card rounded-[2rem] p-10 md:p-14 border border-foreground/[0.05] max-w-sm text-center shadow-lg shadow-foreground/[0.03]">
             <img
               src={dotFridge}
               alt="The dot fridge — a mini display fridge filled with dot canned coffee"
-              className="w-full rounded-2xl mb-6"
+              className="w-full rounded-2xl mb-8"
             />
-            <p className="font-display text-lg font-bold text-foreground mb-1">The dot Fridge</p>
-            <p className="font-body text-sm text-muted-foreground">
+            <p className="font-display text-xl font-bold text-foreground mb-2">The dot Fridge</p>
+            <p className="font-body text-sm text-muted-foreground leading-relaxed">
               A fully stocked branded display fridge for your event or office.
             </p>
           </div>

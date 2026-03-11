@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-/* Halis Grotesque fallback stack — replace with @font-face when font files are available */
 @layer base {
   :root {
     --font-display: 'Outfit', 'DM Sans', system-ui, sans-serif;
@@ -40,6 +39,13 @@
 
     --radius: 1rem;
 
+    /* Section-specific backgrounds */
+    --section-hero: 37 26% 89%;
+    --section-packages: 40 20% 95%;
+    --section-coffee: 35 22% 91%;
+    --section-fridge: 210 20% 95%;
+    --section-footer: 37 18% 93%;
+
     --sidebar-background: 37 26% 89%;
     --sidebar-foreground: 0 0% 7%;
     --sidebar-primary: 218 88% 50%;
@@ -70,6 +76,11 @@
     --border: 0 0% 10%;
     --input: 0 0% 10%;
     --ring: 218 88% 50%;
+    --section-hero: 37 26% 89%;
+    --section-packages: 40 20% 95%;
+    --section-coffee: 35 22% 91%;
+    --section-fridge: 210 20% 95%;
+    --section-footer: 37 18% 93%;
     --sidebar-background: 37 26% 89%;
     --sidebar-foreground: 0 0% 7%;
     --sidebar-primary: 218 88% 50%;
