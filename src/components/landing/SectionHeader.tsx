@@ -7,9 +7,11 @@ interface SectionHeaderProps {
 
 const SectionHeader = ({ title, badge, subtitle, id }: SectionHeaderProps) => {
   return (
-    <div id={id} className="mb-14 scroll-mt-24">
+    <div id={id} className="mb-16 scroll-mt-24">
       <div className="flex flex-wrap items-center gap-4 mb-4">
-        <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-accent tracking-tight">{title}</h2>
+        <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-accent tracking-tight">
+          {title}
+        </h2>
         {badge && (
           <span className="bg-secondary text-secondary-foreground px-5 py-1.5 rounded-full text-xs font-bold font-body uppercase tracking-wider">
             {badge}
