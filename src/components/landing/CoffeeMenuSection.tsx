@@ -4,8 +4,12 @@ import MenuGroup from "./MenuGroup";
 
 const CoffeeMenuSection = () => {
   return (
-    <section className="py-28 px-6" id="coffee-menu">
-      <div className="container mx-auto max-w-7xl">
+    <section className="relative py-32 px-6 bg-section-coffee overflow-hidden" id="coffee-menu">
+      {/* Subtle decorative accent */}
+      <div className="absolute top-20 right-0 w-80 h-80 rounded-full bg-accent/[0.03] blur-3xl" />
+      <div className="absolute bottom-10 left-10 w-64 h-64 rounded-full bg-primary/[0.03] blur-3xl" />
+
+      <div className="container mx-auto max-w-7xl relative z-10">
         <SectionHeader
           title="dot coffee cart menu"
           badge="package a & b"
@@ -14,14 +18,14 @@ const CoffeeMenuSection = () => {
         />
 
         {/* Legend */}
-        <div className="flex items-center gap-4 mb-12">
+        <div className="flex items-center gap-5 mb-14">
           <div className="flex items-center gap-2">
-            <span className="bg-accent text-accent-foreground text-[10px] px-3 py-1 rounded-full font-bold font-body uppercase tracking-wider">
+            <span className="bg-accent text-accent-foreground text-[10px] px-4 py-1.5 rounded-full font-bold font-body uppercase tracking-[0.12em]">
               best seller
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="bg-secondary text-secondary-foreground text-[10px] px-3 py-1 rounded-full font-bold font-body uppercase tracking-wider">
+            <span className="bg-secondary text-secondary-foreground text-[10px] px-4 py-1.5 rounded-full font-bold font-body uppercase tracking-[0.12em]">
               dairy free
             </span>
           </div>
@@ -32,7 +36,7 @@ const CoffeeMenuSection = () => {
         <MenuGroup title="specials — non coffee" items={coffeeCartMenu.specialsNonCoffee} />
         <MenuGroup title="for kids" items={coffeeCartMenu.kids} />
 
-        <p className="font-body text-sm text-muted-foreground italic mt-2 border-t border-foreground/10 pt-6">
+        <p className="font-body text-sm text-muted-foreground italic mt-4 border-t border-foreground/[0.08] pt-8">
           {landingNotes.kidsNote}
         </p>
       </div>
