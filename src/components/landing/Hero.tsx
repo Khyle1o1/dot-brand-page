@@ -48,7 +48,7 @@ const Hero = () => {
             >
               <a
                 href="#contact"
-                className="bg-accent text-accent-foreground px-10 py-4 rounded-full text-sm font-bold hover:opacity-90 transition-all shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-0.5"
+                className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-sm font-bold hover:opacity-90 transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5"
               >
                 Inquire Now
               </a>

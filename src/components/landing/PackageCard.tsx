@@ -17,7 +17,7 @@ const PackageCard = ({ pkg, featured = false }: PackageCardProps) => {
     >
       {/* Most Popular badge */}
       {featured && (
-        <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-6 py-2 rounded-full text-[10px] font-bold font-body uppercase tracking-[0.15em] shadow-lg shadow-accent/30">
+        <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-foreground text-primary px-6 py-2 rounded-full text-[10px] font-bold font-body uppercase tracking-[0.15em] shadow-lg shadow-foreground/10">
           Most Popular
         </span>
       )}
@@ -41,7 +41,7 @@ const PackageCard = ({ pkg, featured = false }: PackageCardProps) => {
       >
         {pkg.title}
       </h3>
-      <p className="font-display text-4xl md:text-5xl font-bold text-accent mb-10">
+      <p className={`font-display text-4xl md:text-5xl font-bold mb-10 ${featured ? "text-primary-foreground" : "text-primary"}`}>
         {pkg.price}
       </p>
 
@@ -88,7 +88,7 @@ const PackageCard = ({ pkg, featured = false }: PackageCardProps) => {
         href="#contact"
         className={`block text-center px-6 py-3.5 rounded-full text-sm font-bold font-body transition-all mb-6 ${
           featured
-            ? "bg-accent text-accent-foreground hover:opacity-90 shadow-lg shadow-accent/25"
+            ? "bg-primary-foreground text-primary hover:opacity-90 shadow-lg shadow-foreground/10"
             : "bg-primary text-primary-foreground hover:opacity-90 shadow-md shadow-primary/15"
         }`}
       >
@@ -98,7 +98,7 @@ const PackageCard = ({ pkg, featured = false }: PackageCardProps) => {
       {/* Add-ons */}
       {pkg.addOns.length > 0 && (
         <div className={`mt-auto pt-6 border-t ${featured ? "border-primary-foreground/15" : "border-foreground/[0.08]"}`}>
-          <p className="font-bold text-[10px] uppercase tracking-[0.15em] mb-4 font-body text-accent">
+          <p className={`font-bold text-[10px] uppercase tracking-[0.15em] mb-4 font-body ${featured ? "text-primary-foreground/70" : "text-primary"}`}>
             Add-ons
           </p>
           <ul

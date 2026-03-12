@@ -34,7 +34,7 @@ const DrinkCard = ({ name, variant = "default" }: DrinkCardProps) => {
       <p className="font-display font-bold text-sm capitalize tracking-tight leading-tight">{name}</p>
       <div className="flex gap-1.5 mt-2 flex-wrap justify-center">
         {isBestSeller && (
-          <span className="bg-accent text-accent-foreground text-[10px] px-2.5 py-0.5 rounded-full font-bold font-body uppercase tracking-wider">
+          <span className="bg-primary text-primary-foreground text-[10px] px-2.5 py-0.5 rounded-full font-bold font-body uppercase tracking-wider">
             best seller
           </span>
         )}

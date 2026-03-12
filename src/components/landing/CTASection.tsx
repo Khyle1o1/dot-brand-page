@@ -8,7 +8,7 @@ const CTASection = () => {
           {/* Decorative abstract shapes */}
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-primary-foreground/[0.04] -translate-y-1/2 translate-x-1/3" />
           <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-primary-foreground/[0.04] translate-y-1/3 -translate-x-1/4" />
-          <div className="absolute top-1/2 right-1/3 w-48 h-48 rounded-full bg-accent/[0.08] blur-2xl" />
+          <div className="absolute top-1/2 right-1/3 w-48 h-48 rounded-full bg-primary-foreground/[0.06] blur-2xl" />
 
           <div className="relative z-10 grid lg:grid-cols-2 gap-14 items-center">
             <div>
@@ -23,7 +23,7 @@ const CTASection = () => {
               <div className="flex flex-col sm:flex-row items-start gap-4">
                 <a
                   href="#"
-                  className="bg-accent text-accent-foreground px-12 py-4.5 rounded-full text-sm font-bold font-body hover:opacity-90 transition-all shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-0.5"
+                  className="bg-primary-foreground text-primary px-12 py-4.5 rounded-full text-sm font-bold font-body hover:opacity-90 transition-all shadow-lg shadow-foreground/10 hover:shadow-xl hover:-translate-y-0.5"
                 >
                   Inquire Now
                 </a>
