@@ -4,7 +4,7 @@ import heroCups from "@/assets/hero-cups.png";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden pt-16 pb-24 md:pt-20 md:pb-32 lg:pt-24 lg:pb-40 px-6 bg-section-hero">
+    <section className="relative overflow-hidden pt-8 pb-24 md:pt-10 md:pb-32 lg:pt-12 lg:pb-40 px-6 bg-section-hero">
       {/* Decorative background shapes */}
       <div className="absolute top-0 right-0 w-[55%] h-[120%] bg-primary/[0.03] rounded-bl-[200px] -z-0 hidden lg:block" />
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-accent/[0.04] -z-0 blur-3xl" />

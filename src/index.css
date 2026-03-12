@@ -1,13 +1,35 @@
+@font-face {
+  font-family: 'Halis Grotesque';
+  src: url('/halis-grotesque-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halis Grotesque';
+  src: url('/halis-grotesque-medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halis Grotesque';
+  src: url('/halis-grotesque-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
 @layer base {
   :root {
-    --font-display: 'Outfit', 'DM Sans', system-ui, sans-serif;
-    --font-body: 'DM Sans', system-ui, sans-serif;
+    --font-display: 'Halis Grotesque', system-ui, sans-serif;
+    --font-body: 'Halis Grotesque', system-ui, sans-serif;
 
     --background: 37 26% 89%;
     --foreground: 0 0% 7%;
@@ -95,14 +117,10 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: 'Halis Grotesque', system-ui, sans-serif;
   }
 
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-body);
-  }
-
-  h1, h2, h3, h4 {
-    font-family: var(--font-display);
   }
 }

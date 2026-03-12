@@ -51,19 +51,7 @@ const FridgeMenuSection = () => {
         </div>
 
         {/* Fridge showcase */}
-        <div className="mt-24 flex justify-center">
-          <div className="bg-card rounded-[2rem] p-10 md:p-14 border border-foreground/[0.05] max-w-sm text-center shadow-lg shadow-foreground/[0.03]">
-            <img
-              src={dotFridge}
-              alt="The dot fridge — a mini display fridge filled with dot canned coffee"
-              className="w-full rounded-2xl mb-8"
-            />
-            <p className="font-display text-xl font-bold text-foreground mb-2">The dot Fridge</p>
-            <p className="font-body text-sm text-muted-foreground leading-relaxed">
-              A fully stocked branded display fridge for your event or office.
-            </p>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

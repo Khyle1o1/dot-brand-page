@@ -12,10 +12,13 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      sans: ['Halis Grotesque', 'system-ui', 'sans-serif'],
+    },
     extend: {
       fontFamily: {
-        display: ['Outfit', 'DM Sans', 'system-ui', 'sans-serif'],
-        body: ['DM Sans', 'system-ui', 'sans-serif'],
+        display: ['Halis Grotesque', 'system-ui', 'sans-serif'],
+        body: ['Halis Grotesque', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
